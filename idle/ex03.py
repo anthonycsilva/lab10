@@ -1,4 +1,4 @@
-lista_contatos = [['Clara','1091982','Namorada','9994243999'],
+lista_contatos = [['Clara','1091982','Irmã da Alininha','9994243999'],
             ['Samara','1091982','Otaka','999992423499'],
             ['Diego','1091982','MonoAnivia','992312399'],
             ['Avelar','1091982','Avelindo','9999131999'],
@@ -8,7 +8,7 @@ lista_contatos = [['Clara','1091982','Namorada','9994243999'],
 def criaContato():
     nome = str(input('Digite o nome a ser inserido: '))
     codigo = str(input('Digite o codigo da pessoa: '))
-    cargo = str(input('Digite o cargo da pessoa, Namorada só se o nome for Clara: '))
+    cargo = str(input('Digite o cargo da pessoa: '))
     telefone = str(input('Digite o telefone da pessoa: '))
 
     if nome == '' or codigo == '' or cargo == '' or telefone == '':
