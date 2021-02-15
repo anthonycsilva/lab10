@@ -1,23 +1,29 @@
-#tratar entradas, (opc, a,b,c):
-
 def mostraEntrada(a,b,c):
+    '''Essa função mostra os numeros digitados na tela '''
+    ''' int, int, int -> int, int, int'''
     print(f'Primeiro Valor: {a}')
     print(f'Segundo Valor: {b}')
     print(f'Terceiro Valor: {c}')
+    return a,b,c
 def calcularTrapezio(a,b,c):
+    '''Essa função calcula a area do um trapézio '''
+    '''int, int,int -> float '''
     mostraEntrada(a,b,c)
-    #a = b
-    #b = B
-    #c = h
     area = ((a+b)*c)/2
     return area
 def mult(a,b,c):
+    '''essa função multiplica o numeros numeros de entrada por eles próprios'''
+    '''int, int, int -> int, int, int'''
     mostraEntrada(a,b,c)
     return a*a,b*b,c*c
 def media(a,b,c):
+    '''essa função retorna a média de 3 numeros'''
+    '''int,int,int -> float'''
     mostraEntrada(a,b,c)
     return (a+b+c)/3
 def calculaIntervalo(a,b,c):
+    '''essa função calcula a soma entre os invervalos de c até um numero b'''
+    '''int, int, int -> int'''
     soma = a
     resultados = list()
     resultados.append(a)
@@ -27,6 +33,8 @@ def calculaIntervalo(a,b,c):
             resultados.append(soma)
     return sum(resultados)
 def main():
+    '''função principal, usada para execução de funções secundárias'''
+    '''-> boolean'''
     print('1 - Calculando a Area do Trapézio')
     print('2 - Calculando os Multiplos!')
     print('3 - Calculando a Média')
